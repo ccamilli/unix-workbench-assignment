@@ -1,4 +1,4 @@
-nb_files=$(ls -A | wc -l)
+nb_files=$(ls -al | grep ^- | wc -l)
 user_guess=-1
 
 echo "How many files are there in the current directory? Please guess:"
